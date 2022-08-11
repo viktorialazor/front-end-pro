@@ -1,0 +1,159 @@
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.form {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.form__input {
+  width: 230px;
+  min-height: 20px;
+  margin-right: 5px;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: rgb(52, 52, 52);
+  border: 1px solid rgb(52, 52, 52);
+}
+
+.form__input:focus,
+.form__input:active {
+  outline: 1px dashed rgb(52, 52, 52);
+  outline-offset: 1px;
+}
+
+.form__button {
+  min-width: 120px;
+  min-height: 34px;
+  padding: 5px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: rgb(100 95 95);
+  border: 1px solid rgb(100 95 95);
+  border-radius: 0;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+.form__button:hover,
+.form__button:active {
+  color: rgb(52, 52, 52);
+  background-color: transparent;
+  border-color: rgb(100 95 95);
+}
+
+.form__button:focus {
+  outline: 1px dashed rgb(100 95 95);
+  outline-offset: 1px;
+}
+
+.user {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 30px);
+  max-width: 100%;
+  margin: 0;
+  padding: 0 20px 20px 10px;
+}
+
+.user__data {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.user__text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: max-content;
+  margin: 0;
+}
+
+.user__image,
+.user__text {
+  margin-top: 0;
+}
+
+.user__image {
+  margin-bottom: 20px;
+}
+
+.user__image img {
+  display: block;
+  max-width: 240px;
+}
+
+.user__text {
+  display: flex;
+  margin-bottom: 10px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.user__text span {
+  margin-left: auto;
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 20px 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: #d7eefd;
+  border: 1px solid #000;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.tab-btn:not(:last-of-type) {
+  border-right: 0;
+}
+
+.tabs-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;  
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.tab-pane {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #000;
+}
+
+.tab-btn.active {
+  background-color: #fff;
+  border-bottom: 0;
+}
+
+.tab-pane.active {
+  display: block;
+}
