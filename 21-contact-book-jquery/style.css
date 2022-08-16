@@ -1,0 +1,200 @@
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 640px;
+  padding: 20px;
+}
+
+.contact-add {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(14 14 126);
+}
+
+.contact-add__button {
+  display: block;
+  margin-left: auto;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: rgb(14 14 126);
+  counter-reset: num;
+}
+
+.list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 30px;
+}
+
+.list__item + .list__item {
+  margin-top: 5px;
+}
+
+.list__item::before,
+.list__item::after {
+  position: absolute;
+  display: block;
+  margin-right: 8px;
+}
+
+.list__item::before {
+  top: auto;
+  left: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  color: rgb(14 14 126);
+  content: counter(num);
+  counter-increment: num;
+}
+
+.list__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list__text + .list__text:not(.list__text--phone) {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.list__text--phone {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.list__buttons {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.list__button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(14 14 126);
+  background-color: transparent;
+  border: 1px solid rgb(14 14 126);
+  border-radius: 0;
+  cursor: pointer;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.list__button:hover,
+.list__button:active {
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+}
+
+.list__button:focus {
+  outline: 1px dashed rgb(0, 0, 0);
+  outline-offset: 1px;
+}
+
+.list__button:disabled {
+  cursor: default;
+  color: rgb(136, 136, 136);
+  border-color: rgb(136, 136, 136);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form__text {
+  padding-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: rgb(14 14 126);
+}
+
+.form__input {
+  width: calc(100% - 10px);
+  min-height: 20px;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: rgb(14 14 126);
+  border: 2px solid rgb(14 14 126);
+}
+
+.form__input:focus,
+.form__input:active {
+  outline: 1px dashed rgb(14 14 126);
+  outline-offset: 1px;
+}
+
+.ui-dialog-buttonpane .ui-button,
+.contact-add__button {
+  min-height: 34px;
+  padding: 5px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgb(14 14 126);
+  border: 2px solid rgb(14 14 126);
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.ui-dialog-buttonpane .ui-button:hover,
+.ui-dialog-buttonpane .ui-button:active,
+.contact-add__button:hover,
+.contact-add__button:active {
+  font-weight: 500;
+  border: 2px solid rgb(14 14 126);
+  color: rgb(14 14 126);
+  background-color: transparent;
+}
+
+.ui-dialog-buttonpane .ui-button:focus,
+.form__button:focus {
+  font-weight: 500;
+  color: rgb(14 14 126);
+  background-color: transparent;
+  border: 2px solid rgb(14 14 126);
+  outline: 1px dashed rgb(14 14 126);
+  outline-offset: 1px;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+  margin: 0;
+  padding: 15px 10px;
+  border-color: rgb(14 14 126);
+}
+
+.ui-widget-header {
+  border-color: rgb(14 14 126);
+  background-color: rgb(14 14 126);
+  color: #fff;
+}
+
+.ui-widget.ui-widget-content {
+  border-color: rgb(14 14 126);
+}
+
+.ui-widget-overlay {
+  background-color: rgb(93 109 175);
+}

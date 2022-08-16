@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./style.css" />
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script defer src="./ContactsApi.js"></script>
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="contact-add">
+      <button id="add-button" class="contact-add__button" type="button">Add Contact</button>
+    </div>
+    <ol id="contact-list" class="list"></ol>
+    <div id="contact-form-modal" title="Contact Form">
+      <form id="form" class="form">
+        <input id="user-id" name="id" type="hidden" />
+        <label class="form__row" for="firstName">
+          <span class="form__text">Name</span>
+          <input id="user-first-name" class="form__input" type="text" name="firstName" value="">
+        </label>
+        <label class="form__row" for="lastName">
+          <span class="form__text">Surname</span>
+          <input id="user-last-name" class="form__input" type="text" name="lastName" value="">
+        </label>
+        <label class="form__row" for="phone">
+          <span class="form__text">Phone</span>
+          <input id="user-phone" class="form__input" type="text" name="phone" value="">
+        </label>
+      </form>
+    </div>
+  </div>
+  <script id="listItemTemplate" type="text/template">
+    <li class="list__item" data-id={id}>
+      <p class="list__text">
+        <span>{firstName}</span>
+        <span>{lastName}</span>
+      </p>
+      <p class="list__text list__text--phone">{phone}</p>
+      <div class="list__buttons">
+        <button class="list__button edit-contact-button" type="button">Edit</button>
+        <button class="list__button delete-contact-button" type="button">Delete</button>
+      </div>
+    </li>
+  </script>
+</body>
+</html>
