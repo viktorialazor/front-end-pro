@@ -1,0 +1,77 @@
+.title {
+  margin-bottom: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.students-marks {
+  padding: 0 24px;
+  margin-bottom: 24px;
+}
+
+.students-marks__headline {
+  margin-bottom: 12px;
+}
+
+.headline__text {
+  padding-bottom: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  font-style: italic;
+}
+
+.students-marks__info td {
+  padding: 0 4px 8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.student-info__mark {
+  width: 30px;
+  height: 30px;
+  padding: 0 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.student-info__button {
+  height: 34px;
+  padding: 0 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.students-form {
+  display: flex;
+  padding-left: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.students-form__input {
+  width: 400px;
+  height: 34px;
+  margin-right: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.students-form__button {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
