@@ -61,12 +61,12 @@ function showMessage(event) {
 };
 
 function renderMessage(message) {
-    const messageHtml = generateMassageHtml(message);
+    const messageHtml = generateMessageHtml(message);
 
     listEl.insertAdjacentHTML('beforeend', messageHtml);
 };
 
-function generateMassageHtml(message) {
+function generateMessageHtml(message) {
     return `
         <li class="item">
             <p class="user-name">${message.username}:</p>
