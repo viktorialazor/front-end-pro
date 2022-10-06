@@ -1,0 +1,133 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: rgb(14 14 126);
+}
+
+.list__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20ch 30ch max-content;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.list__item + .list__item {
+  margin-top: 10px;
+}
+
+.list__item::before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 6px;
+  left: 6px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgb(14 14 126);
+}
+
+.list__text {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list__text:not(.list__text--name) {
+  font-style: italic;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.form__row {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.form__text {
+  margin-right: 15px;
+  min-width: 50px;
+  font-family: 'Roboto', sans-serif;  
+  font-size: 16px;
+  color: rgb(14 14 126);
+}
+
+.form__input {
+  min-height: 20px;
+  min-width: 300px;
+  max-width: 100%;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: rgb(14 14 126);
+  border: 2px solid rgb(14 14 126);
+}
+
+.form__input:focus,
+.form__input:active {
+  outline: 1px dashed rgb(14 14 126);
+  outline-offset: 1px;
+}
+
+.form__button {
+  width: 100px;
+  min-height: 34px;
+  margin: 0  0 0 auto;
+  padding: 5px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(14 14 126);
+  border: 2px solid rgb(14 14 126);
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.form__button:hover,
+.form__button:active {
+  color: rgb(14 14 126);
+  background-color: transparent;
+}
+
+.form__button:focus {
+  outline: 1px dashed rgb(14 14 126);
+  outline-offset: 1px;
+}
+
+.form__button:disabled {
+  cursor: default;
+  color: white;
+  border-color: rgb(160, 160, 160);
+  background-color: rgb(160, 160, 160);
+}
+
+.error {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: red;
+}
+
+.error:last-of-type {
+  margin-bottom: 20px;
+}
